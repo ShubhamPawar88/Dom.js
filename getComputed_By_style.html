@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="msg" style="color: red; background-color: aqua;">This is paragraph</p>
+    <script>
+        let s= document.querySelector(".msg");
+        let p=window.getComputedStyle(s);
+        console.log(p,p.color);
+        console.log(p,p.backgroundColor);
+        console.log(p,p.fontFamily);
+        console.log(p,p.fontSize);
+        console.log(p,p.fontWeight);
+    </script>
+</body>
+</html>

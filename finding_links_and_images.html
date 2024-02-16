@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">link1</a>
+    <div>
+        <a href="#">link2</a><br>
+        <a href="#">link3</a>
+        <img src="/Javascript/image/Rohit.png" style="width: 300px;" alt="">
+    </div>
+    <a href="#">link4</a>
+    <script>
+        let n=document.links;
+        console.log(n);
+        for(let i=0;i<n.length;i++)
+        {
+            console.log(n[i]);
+        }
+        let m=document.links.length;
+        console.log("total no of links="+m);
+
+        let s=document.images.length;
+        console.log("total no of images="+s);
+    </script>
+</body>
+</html>

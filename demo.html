@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- //Dom=> document object model -->
+        <!-- What is DOM?
+        When our html page is loaded on the browser so at that time
+        our browser creates tree like structure for our given html code and that tree like structure is called DOM in javascript -->
+
+        <!-- what is window object?
+        Basically, window is a global object that is having lots of methods and properties. window object represents or open our html code on new window on browser. window is an object of browser(not the object of javascript)   -->
+
+    <h1n id>welcome to js session</h1n>
+
+    <div>
+         <h2>this is h2</h2>
+         <p>This is paragraph</p>
+    </div>
+    <script>
+        //in below code body,firstChild,lastChild,chilNodes are the properties of document object
+
+        console.log(window);
+        console.log(window.document);
+        console.log(window.document.body);
+        console.log(window.document.body.firstChild);
+        console.log(window.document.body.lastChild);
+        console.log(window.document.body.childNodes[1]);//h1
+        console.log(window.document.body.childNodes[2]);//text
+        console.log(window.document.body.childNodes[3]);//div
+        console.log(window.document.body.childNodes[3].firstChild);//text
+    </script>
+</body>
+</html>

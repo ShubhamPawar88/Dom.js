@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- here, cloning means copying one html element into another html element -->
+    <h1>JS topics</h1>
+    <ul id="topics">
+       <li>operators</li>
+       <li>variables</li>
+       <li>function</li>
+       <li>Array</li>
+    <script>
+     //   The cloneNode() returns a copy of the originalNode here <ul>.
+
+     // If you clone a node with an id attribute and place the cloned node in the same document, the id will be duplicate. In this case, you need to change the id before adding it to the DOM tree.
+
+       let t= document.getElementById("topics");
+        let t_new=t.cloneNode(true);
+
+        t_new.id="t_abc";
+        document.write("<br> Cloning ul node :<br>");
+        document.body.appendChild(t_new);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is a javascript session</p>
+    <h1 id="h_demo" class="h_class">Welcome to JavaScipt Session</h1>
+    <h2 id="h2_demo" class="h_class">Good Evening</h2> 
+      <p>this is paragraph</p>
+    <div>
+         <h2 id="h2_demoA" class="h_class">Inside div</h2>
+         <p id="p1">this is paragraph1</p>
+    </div>
+
+    <p id="p2">this paragraph2</p>
+        <script>
+
+            //we can access html elements in javascript  using 4 ways
+            //1.getElementById()  => returns single element
+            //2.getElementsByClassName()  => returns HTML collection
+            //3.getElementsByTagName("p")  => returns HTML collection
+            //4.querySelector()            => returns First element       
+            // 5.querySelectorAll()        =>  returns HTML collection
+           //Above all are the methods of document objects
+
+           //DOM manipulation=>making changes in DOM model
+           //3.getElementByTagName =>accessing element by using tag name of that element
+           //when access an element by using class name it will return an html collection so we won't manipulate that dom  directly
+
+           let a= document.getElementsByTagName("p");
+           console.log(a);
+           //when access an element by using class name it will return an html collection so we won't manipulate that dom  directly
+
+           a[0].innerHTML="<h2>  DOM Model</h2>";
+           a[1].style.background="pink";
+           a[1].style.padding="20px";
+           a[2].style.color="aqua";
+           a[3].style.border="10px ridge blueviolet";
+        
+        </script>
+</body>
+</html>

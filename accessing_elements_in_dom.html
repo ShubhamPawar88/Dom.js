@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h_demo" class="h_class">Welcome to JavaScipt Session</h1>
+        <h2 id="h2_demo" class="h_class">Good Evening</h2> 
+
+        <div>
+             <h2 id="h2_demoA" class="h_class">Inside div</h2>
+             <p id="p1">this is paragraph1</p>
+        </div>
+
+        <p id="p2">this paragraph2</p>
+        <script>
+            //we can access html elements in javascript  using 4 ways
+            //1.getElementById()  => returns single element
+            //2.getElementsByClassName()  => returns HTML collection
+            //3.getElementsByTagName("p")  => returns HTML collection
+            //4.querySelector()            => returns First element       
+            // 5.querySelectorAll()        =>  returns HTML collection
+           //Above all are the methods of document objects
+           let a= document.getElementById("h2_demoA");
+           console.log(a);
+           a.innerHTML="<h2> All About DOM Model</h2>";
+           a.style.background="pink";
+           a.style.padding="20px";
+           a.style.color="aqua";
+           a.style.border="10px ridge blueviolet";
+           
+
+
+        </script>
+</body>
+</html>

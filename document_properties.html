@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        Inside div
+        <p style="display: none;">This is paragraph1</p>
+    </div>
+    <p>This is paragraph2</p>
+    <script>
+        //document object having 3 properties to access data from html
+        //1. textcontent
+        //2. innerText
+        //3. innarHTML
+
+        //1.textContent property of document object returns the textual/visible  content as well as hidden content of an html element
+        let a=document.getElementById("d1").textContent;
+        console.log(a);
+
+        //2.innerText property of document object returns only the textual/visible  content NOT the hidden content of an html element
+        let b=document.getElementById("d1").innerText;
+        console.log(b);
+
+
+        //3.innerHTML property of document object returns textual contents as well child tags of that html elements
+        let c=document.getElementById("d1").innerHTML;
+        console.log(c);
+    </script>
+</body>
+</html>

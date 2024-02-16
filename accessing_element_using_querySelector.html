@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Html code -->
+    <h1 id="h_demo" class="h_class">Welcome to JavaScipt Session</h1>
+    <h2 id="h2_demo" class="h_class">Good Evening</h2> 
+    <p id="p1">this is paragraph1</p>
+    <div>
+         <h2 id="h2_demoA" class="h_class">Inside div</h2>
+         <p id="p2">this is paragraph2</p>
+    </div>
+
+    <p id="p3">this paragraph3</p>
+    <script>
+        // javascript code
+        //querySelector() and querySelectorAll() access an element by id,classname and tag name
+        //in above code we have 3 <p> tag but querySelector("p") selects only first p
+         //using querySelector() for accessing element using tagname
+            let x=document.querySelector("p");
+            console.log(x);
+            x.style.border="2px";
+            x.style.borderStyle="solid";
+
+             //in above html code we have 3 <p> tags and querySelectorAll("p") selects all of the <p>
+            // querySelectorAll() returns nodeList having all p
+
+            let y=document.querySelectorAll("p");
+            console.log(y);
+            // y[2].style.border="2px";
+            // y[2].style.borderStyle="dotted";
+            //applying below style on all of the elements in nodelist.
+            // and this nodelist y is returned by querySelectorAll() method
+
+            for(let i=0;i<y.length;i++)
+            {
+                y[i].style.border="2px";
+                y[i].style.borderStyle="dotted";
+                y[i].style.background="green";
+            }
+    </script>
+</body>
+</html>

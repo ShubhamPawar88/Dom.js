@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bb">
+    <div id="d1">
+        <!-- !-- Using JavaScipt we can add,delete,change the html elements in DOm --> 
+        <h1>This is h1...</h1>
+        <p>This is paragraph1</p>
+    </div>
+    <p>outside div p2</p>
+    <script>
+        let h_new=document.createElement("h2");
+        let h_text=document.createTextNode(" this is h2");
+
+        h_new.appendChild(h_text);
+        h_new.style.color="blue";
+        //adding new node to an existing node
+        let d1_new= document.getElementById("d1");
+        d1_new.appendChild(h_new);
+
+
+        //2. creating a new node
+        let div_new=document.createElement("div");
+        let div_text=document.createTextNode(" this is new div");
+        div_new.style.border="10px";
+        div_new.style.borderStyle="double";
+
+        div_new.appendChild(div_text);
+        
+
+        let bdy= document.getElementById("bb");
+        bdy.appendChild(div_new);
+        
+    </script>
+</body>
+</html>

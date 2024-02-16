@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        This Is Div
+        <h1>h1 tag....</h1>
+        <p>This is paragraph</p>
+        <a href="#">link1</a>
+        this is text
+    </div>
+    <script>
+        // child node property in below case child nodes returns the nodeList in the 
+            // output
+
+          let a= document.getElementById("d1").firstChild.nodeName;
+          console.log(a);
+          let b= document.getElementById("d1").lastChild.nodeName;
+          console.log(b);
+
+          console.log( document.getElementById("d1").firstChild.nodeValue);
+          console.log(document.getElementById("d1").lastChild.nodeValue);
+
+          console.log(document.getElementById("d1").nodeName);
+          console.log(document.getElementById("d1").nodeType);
+           
+          //in below case, this childNodes property  returns the nodeList(collection/list of nodes) in the output
+          let ch= document.getElementById("d1").childNodes;
+          console.log(ch);
+
+          for(i=0;i<ch.length;i++)
+          {
+            console.log(ch[i]);
+          }
+          console.log("length of childnodes of d1 ="+ch.length);
+
+    </script>
+</body>
+</html>
